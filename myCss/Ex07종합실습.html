@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titㅈle>Document</title>
+    <style>
+        /* 2. 마우스를 올리면 주소가 보일 수 있도록 css 지정 */
+        /* 2-1. sup태그가 화면에 보이지 않도록 */
+        sup {
+            display: none;
+        }
+        /* 2-2. a태그에 마우스를 올리면 sup태그가 화면에 보이도록
+            ~ 쓰면 안 되는 이유 : 전부 가져오는거 ㄴ
+        */
+        a:hover+sup {
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1. html 뼈대 만들기 (a, sup태그) -->
+
+    <a href="https://www.naver.com"> 네이버 </a><sup> www.daum.net </sup>
+    <br>
+    <a href="https://www.daum.net"> 다음 </a><sup> www.daum.net </sup>
+
+</body>
+</html>

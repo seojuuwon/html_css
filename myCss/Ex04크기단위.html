@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            크기단위
+            1. px : 스크린의 픽셀을 기준으로 하는 절대적인 크기
+            2. em : 부모 요소의 크기에 배수 단위
+            3. % : 기본 설정된 크기에 대한 상대적인 크기
+        */
+        div {
+            font-size : 20px;
+        }
+        /* 부모 div의 크기가 20px, em은 부모크기 배수 단위라서 class이름이 2배인 40px로 적용 */
+        #class {
+            font-size : 2em;
+        }
+        /* #name의 기본 크기가 20px라서 그의 200%에 해당하는 40px로 적용 */
+        #name {
+            font-size: 200%;
+        }
+        /* #teacher의 기본 크기가 16px라서 그의 200%에 해당하는 32px로 적용 */
+        #teacher {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="class"> JS B </p>
+        <p id="name"> 서주원 </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 이미지 태그 </h1>
+
+    <!-- alt 속성 : 이미지가 나오지 않을 때 보이는 설명 -->
+    <img src="" alt="이미지태그입니다.">
+
+    <h4> 절대경로로 이미지 가져오기 </h4>
+    <!-- 
+        1. 원하는 이미지 오른쪽 마우스
+        2. 이미지 주소복사
+        3. src에 붙여넣기
+    -->
+    <!--  
+        절대경로 : 페이지나 파일이 가지고 있는 고유한 경로
+            장점 : 이미지파일을 실제로 가지고 있지 않아도 쉽게 사용 가능
+            단점 : 해당 경로에서 파일이 사라지면 사용 불가능
+        ** 외부 페이지/파일을 가지고 올 때 사용함
+    -->
+    <img src="https://rgo4.com/files/attach/images/2681740/617/103/007/c026461721a57836e71f440d84c53db4.jpg" alt="">
+
+
+    <hr>
+    <h4> 상대경로로 이미지 가져오기 </h4>
+    <!--  
+        현재 기준 경로 찾기 : ./ (생략 가능)
+        상위 기준 경로 찾기 : ../
+        루트 기준 경로 찾기 : /
+    -->
+    <img src="../puppy.jpg" alt="">
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            마진 상쇄 현상
+            : 인접 형제 요소 간의 상하마진이 겹칠 때 가장 큰 마진으로 결합되는 현상
+        */
+        div {
+            width : 200px;
+            height: 200px;
+        }
+        #tomato {
+            background-color: tomato;
+            margin-bottom: 100px;
+        }
+        #gold {
+            background-color: gold;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tomato"></div>
+    <div id="gold"></div>
+</body>
+</html>

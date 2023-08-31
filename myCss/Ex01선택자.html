@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1 태그는 다음과 같은 디자인을 적용할 것입니다. */
+        /* 선택자 --> h1 */
+        /* 태그, 클래스, 아이디 */
+        h1 {
+            color : red;
+            font-size: 100px;
+        }
+
+        /* . -> 클래스 지정 선택자 */
+        .day {
+            color: orange;
+        }
+        
+        /*  # -> 아이디 지정 선택자
+            아이디 선택자는 하나의 태그에만 적용 시키고 싶을 때!!
+        */
+        #myday {
+            color: skyblue;
+        }
+        /* 아래에 있는 css는 스타일이 추가로 적용 되어진다 */
+
+    </style>
+</head>
+<body>
+    <!-- 글씨 빨간색, 크기 100px -->
+    <h1> 신나는 목요일 </h1>
+
+    <h2 class="day"> 신나는 수요일 </h2>
+    <h2 class="day"> 신나는 수요일 오전 </h2>
+    <h2 class="day"> 신나는 수요일 저녁</h2>
+
+    <h2> 신나는 금요일 </h2>
+    <h2> 신나는 금요일 오전 </h2>
+    <h2> 신나는 금요일 저녁</h2>
+
+    <h1 id="myday"> 내일 금요일 </h1>
+</body>
+</html>

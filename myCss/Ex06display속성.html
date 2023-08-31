@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            display속성 : 화면에 보여지는 방식을 지정하는 가시속성
+            1. block : 웹 페이지의 가로공간을 모두 차지하는 속성(div, p...)
+                     : 가로세로 크기 지정 O
+            2. inline : content의 크기만큼 공간을 차지(span, a...)
+                     : 가로세로 크기 지정 X
+            3. inline-block : inline + block
+                            : content의 크기만큼 공간차지 + 가로세로 크기 지정 가능
+            4. none : 화면에 보이지 않게 하는 속성
+        */
+        div {
+            background-color: tomato;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+        p {
+            background-color: orange;
+            display: none;
+            width: 200px;
+            height: 200px;
+        }
+        span {
+            background-color: yellowgreen;
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 공간분할태그 -->
+    <div> div 태그 </div>
+    <p> p 태그 </p>
+    <span> span 태그 </span>
+</body>
+</html>

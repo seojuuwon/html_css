@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* *표시는 전체 선택자 */
+        * {
+            color: green;
+        }
+        /* 담임쌤 이름만 노랑색으로 바꾸고 싶어요 */
+        #담임 {
+            color: yellow;
+        }
+        /* 부담임쌤들 이름은 빨간색으로 바꾸고 싶어요 */
+        .부담임 {
+            color: red;
+        }
+        /* 수업하러 들어오신 선생님들의 이름을 파란색으로 */
+        /* 클래스선택자 10 */
+        .선생님 {
+            color : blue;
+        }
+
+        /* p {
+            color : green;
+        } */
+
+        /* >표시는 자식 선택자로 바로 하위의 자식을 가르킬 수 있음 */
+        /* 아이디 가중치 100 */
+        ul > p.선생님, #담임 {
+            color : green;
+        }
+
+        /* 자손 선택자  띄어쓰기 
+            ul태그 밑에 있는 li태그를 전부 선택하겠다 요런 뜻
+        */
+        /* 태그선택자 1 */
+        ul li {
+            color : red;
+        }
+        
+        /* 선택자 우선순위(가중치) */
+
+        /* 
+            +표시 형제 선택자
+            인접한 태그 하나를 가져옴(바로 아래에 있는)
+        */
+        li.선생님 + p {
+
+        }
+
+        /* 
+            ~표시
+            형제 선택자 중 전부 다 가져오고 싶을 때
+        */
+        li~li {
+            
+        }
+
+        /* 그룹선택자 : 여러 개 선택자의 css를 변경하고 싶을 때 */
+        h1, p {
+            color : aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> 인공지능 사관학교 최강 JSB </h1>
+    <!-- 선생님들의 성함을 목록 형태로 출력하고 싶습니다. -->
+
+    <ul>
+        <li id="담임">황해도</li>
+        <li class="부담임">선영표</li>
+        <li class="부담임">정봉균</li>
+        <li class="선생님">임승환</li>
+        <p class="선생님">박수현</p>
+    </ul>
+
+</body>
+</html>

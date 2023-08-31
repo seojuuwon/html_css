@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            /* display: flex; 를 한 뒤 정렬에 대한 속성을 적용시킬 수 있다.*/
+            display: flex;
+
+            /* 행 방향으로 정렬 (기본값) */
+            flex-direction: row;
+            /* 열 방향으로 정렬 */
+            flex-direction: column;
+            /* 행 방향의 반대로 정렬 (역순배치) */
+            flex-direction: row-reverse;
+            /* 열 방향의 반대로 정렬 */
+            flex-direction: column-reverse;
+            /* 정렬할 때 줄바꿈에 관련된 속성 */
+            /* 화면크기를 벗어나더라도 줄바꿈을 하지 않음 */
+            flex-wrap: nowrap;
+            flex-wrap: wrap; /* -> 줄바꿈 가넝한 */
+
+            /* 좌우 정렬 */
+            /* 왼쪽부터 정렬 
+                -> flex : rows의 기본값
+            */
+            justify-content: flex-start;
+            /* 오른쪽부터 정렬 */
+            justify-content: flex-end;
+            /* 가운데 정렬 */
+            justify-content: center;
+            /* 일정한 간격으로 정렬 (아이템 기준) */
+            justify-content: space-between;
+            /*    */
+        }
+        .item{
+            background-color: red; 
+            margin: 10px;
+        }
+
+        h1 {
+            color: orange !important
+        }
+
+        /* @import url(파일경로) --> 외부 css 파일 가져오기! */
+        @import url(mycss.css);
+
+    </style>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item">FLEX1</div>
+        <div class="item">FLEX2</div>
+        <div class="item">FLEX3</div>
+    </div>
+    <!-- 
+        css 우선 순위
+        0. !important
+        1. 인라인 속성 사용
+        2. 내부 스타일 사용
+        3. 외부 css 스타일 -> <link>
+        ** 주의 2번과 3번은 적용 되어지는 순서에 따라서 바뀔 수 잇음
+        ** !important를 옆에 붙이면 얘가 0순위 (복잡해지기 때문에 사용 안 하는 걸 추천)
+     -->
+    <h1> 집 </h1>
+</body>
+</html>

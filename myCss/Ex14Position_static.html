@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            /* position: static; 
+                -> 기본적으로 태그가 가지고 있는 위치속성값
+                -> 태그 생성 순서대로
+            */
+        }
+        #orange{
+            /* position static으로 잡혀진 위치부터 상대적으로 거리를 조절하겠음 => position : relative */
+            position: relative;
+            /* left => 왼쪽으로부터 얼마만큼 거리를 벌려주세요 */
+            left: 100px;
+            background-color: orange;
+            /* z-index : 태그의 순서를 지정하는 속성
+                속성 값이 낮을수록 뒤로,
+                속성 값이 높을수록 위로 올라온다.
+            */
+            z-index: 9999;
+        }
+        #yellow{
+            background-color: yellow;
+            position: relative;
+            left: 130px;
+            bottom:50px
+        }
+        #blue{
+            background-color: blue;
+            position: relative;
+            left: 150px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="blue"></div>
+</body>
+</html>

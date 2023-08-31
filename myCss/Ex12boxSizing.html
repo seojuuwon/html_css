@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #small{
+            border : 10px solid black;
+            margin-bottom: 5px;
+        }
+        #big{
+            border : 30px solid black;
+        }
+        /* box-sizing : 요소의 크기를 지정하는 방식 
+            1. content-box : 기본값 -> content영역의 크기 지정
+            2. border-box : border까지의 크기를 지정
+        */
+        div{
+            width: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="small"> JS B </div>
+    <div id="big"> JS B </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 테이블태그 사용해서 메뉴판 만들기 </h1>
+    <table border="1">
+        <!-- 표의 제목 -->
+        <caption> 정희 </caption>
+        <!-- 7행 3열 테이블 만들기 -->
+        <!-- 제목행 -->
+        <tr>
+            <th> 메뉴 </th>
+            <th> 가격 </th>
+            <th> 비고 </th>
+        </tr>
+        <tr>
+            <td> 고사리크림수제비 </td>
+            <td> 12,000원 </td>
+            <!-- rowspan : 행 병합 -->
+            <td rowspan="3"> 식사 </td>
+        </tr>
+        <tr>
+            <td> 묵은지회말이 </td>
+            <td> 11,900원 </td>
+        </tr>
+        <tr>
+            <td> 감태 타르타르 </td>
+            <td> 11,900원 </td>
+        </tr>
+        <tr>
+            <td> 맥주 </td>
+            <td> 4,000원 </td>
+            <td rowspan="2"> 주류 </td>
+        </tr>
+        <tr>
+            <td> 소주 </td>
+            <td> 4,000원 </td>
+        </tr>
+        <tr>
+            <td> 막걸리 </td>
+            <!-- colspan : 열 병합 -->
+            <td colspan="2"> 판매중지 </td>
+        </tr>
+    </table>
+</body>
+</html>

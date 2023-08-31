@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nomal{
+            height : 35px;
+            background-color : whitesmoke;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form action="./Ex07_테이블태그.html" method="post">
+    <table width="400px" border="1">
+        <tr height="50px">
+            <td colspan="2" bgcolor="gray">STEP1: 아이디 입력</td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">아이디 </td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">비밀번호</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">비밀번호 확인</td>
+            <td><input type="password"></td>
+        </tr>
+        <!-- Step2 -->
+        <tr height="50px">
+            <td colspan="2" bgcolor="gray">STEP2: 개인정보</td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">성별 </td>
+            <td>
+                <!-- radio 에 같은 name 이 있다면 하나만 체크 가능하다! -->
+                남<input type="radio" name="gender" value="남자"></input>
+                여<input type="radio" name="gender"></input>
+            </td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">혈액형</td>
+            <td>
+                <select>
+                    <option value="A형">A형</option>
+                    <option value="B형">B형</option>
+                    <option value="AB형">AB형</option>
+                    <option value="O형">O형</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">생일</td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <!-- Step3 선호도 -->
+        <tr>
+            <td colspan="2" height="50px" bgcolor="gray">STEP3 : 선호도</td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">취미</td>
+            <td>
+                축구<input type="checkbox">
+                야구<input type="checkbox">
+                농구<input type="checkbox">
+            </td>
+        </tr>
+        <tr class="nomal">
+            <td align="right">좋아하는 색깔</td>
+            <td>
+                <input type="color">
+            </td>
+        </tr>
+        <!-- STEP4 적고싶은말 -->
+        <tr>
+            <td colspan="2" bgcolor="gray" height="50px">STEP4 : 적고싶은말</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <!-- rows(세로)-10 , cols(가로)-80 -->
+                <textarea rows="10" cols="80"></textarea>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center" height="30px">
+                <!-- value 속성에 값을 담아주게 되면 default 값으로 설정할 수 있다 -->
+                
+                <!-- 
+                    submit, reset -> form과 같이 사용되어진다
+
+                    reset : form 안에 있는 내용을 기본값으로 바꾸어주세요!
+                    submit : form 안에 있는 정보를 가지고
+                    서버로(다른곳 = action에 명시된) 으로 전송해주세요!
+
+                 -->
+                
+                <input type="submit" value="전송">
+                <input type="reset"  value="초기화">
+            </td>
+        </tr>
+    </table>
+</form>
+<!-- get 방식으로 통신한다(주소값을 통해서 통신한다) -->
+<!-- post 방식 http 규칙에 맞게 통신영역중 body 에 담아서 보내겠습니다 -->
+<a href="Ex07_테이블태그.html?data=10">테이블 실습 페이지로 이동해주세요!</a>
+    
+</body>
+</html>
